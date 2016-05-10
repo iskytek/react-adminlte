@@ -1,0 +1,40 @@
+{
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        }
+    },
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    },
+    "env": {
+        "browser": true,
+        "es6":     true,
+        "node":    true
+    },
+    "plugins": [
+        "react"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ]
+}
+
