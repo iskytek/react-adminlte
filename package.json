@@ -1,8 +1,8 @@
 {
   "name": "react-adminlte",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "AdminLTE components written for React",
-  "main": "src/index.js",
+  "main": "lib/react-adminlte.js",
   "jsnext:main": "src/index.js",
   "scripts": {
     "clean": "rm -r lib",
