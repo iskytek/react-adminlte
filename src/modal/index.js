@@ -1,4 +1,4 @@
-export * from './modal';
-export * from './body';
-export * from './footer';
+export {default as Modal} from './modal';
+export {default as ModalBody} from './body';
+export {default as ModalFooter} from './footer';
 

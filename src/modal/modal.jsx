@@ -6,7 +6,7 @@ import {
     COMPONENT_CHILDREN,
     COMPONENT_LEVELS,
     getComponentLevelClassName
-} from 'components/utils';
+} from '../utils';
 
 class Modal extends React.Component {
     render() {

@@ -3,7 +3,7 @@ import React from 'react';
 import classNames from 'classnames';
 import mergeStyles from 'react-merge-styles';
 
-import FAIcon from 'components/faIcon';
+import FAIcon from './faIcon';
 
 class Overlay extends React.Component {
     getStyles() {

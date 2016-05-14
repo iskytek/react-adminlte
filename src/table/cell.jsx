@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {COMPONENT_CHILDREN} from 'components/utils';
+import {COMPONENT_CHILDREN} from '../utils';
 
 class TableCell extends React.Component {
     render() {

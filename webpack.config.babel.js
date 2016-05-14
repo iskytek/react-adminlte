@@ -70,11 +70,10 @@ config.entry = Object.assign({
  * This is how we configure the output for webpack
  */
 config.output = {
-    path: path.resolve(__dirname, 'lib'),
+    path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
     library: 'react-adminlte',
-    libraryTarget: 'umd',
-    umdNamedDefine: true
+    libraryTarget: 'umd'
 };
 
 /**
@@ -171,11 +170,6 @@ config.module = {
             test:   /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
             loader: 'file'
         }
-    ],
-
-    noParse: [
-        'react',
-        'react-dom'
     ]
 };
 
@@ -209,26 +203,6 @@ config.resolve = {
      * The extensions for JavaScript modules to load
      */
     extensions: ['', '.js', '.jsx']
-};
-
-/**
- * Externals
- * Reference: http://webpack.github.io/docs/configuration.html#externals
- * Mark external dependencies that should not be resolved by webpack
- */
-config.externals = {
-    react: {
-        root: 'React',
-        commonjs2: 'react',
-        commonjs: 'react',
-        amd: 'react'
-    },
-    'react-dom': {
-        root: 'ReactDOM',
-        commonjs2: 'react-dom',
-        commonjs: 'react-dom',
-        amd: 'react-dom'
-    }
 };
 
 /**
@@ -287,12 +261,6 @@ config.plugins = [
      * Only emit files when there are no errors
      */
     new webpack.NoErrorsPlugin(),
-
-    /**
-     * Reference: http://webpack.github.io/docs/list-of-plugins.html#occurrenceorderplugin
-     * Orders chunk by how often they are requested in modules
-     */
-    new webpack.optimize.OccurrenceOrderPlugin(),
 
     /**
      * Reference: https://github.com/webpack/extract-text-webpack-plugin

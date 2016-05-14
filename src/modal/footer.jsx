@@ -2,7 +2,7 @@ import React from 'react';
 
 import classNames from 'classnames';
 
-import {COMPONENT_CHILDREN} from 'components/utils';
+import {COMPONENT_CHILDREN} from '../utils';
 
 class ModalFooter extends React.Component {
     render() {
