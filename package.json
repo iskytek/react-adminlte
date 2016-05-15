@@ -1,6 +1,6 @@
 {
   "name": "react-adminlte",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "AdminLTE components written for React",
   "jsnext:main": "src/index.js",
   "main": "lib/index.js",
